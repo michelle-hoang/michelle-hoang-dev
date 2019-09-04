@@ -1,21 +1,311 @@
+/*
+ * Hi! I'm your stylesheet! I've got some sensible defaults here,
+ * but feel free to change me to your heart's content!
+
+font-family: 'Corben', cursive;
+font-family: 'Space Mono', monospace;
+font-family: 'Cormorant', serif;
+ */
+
+@font-face {
+  font-family: 'Futura-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura-Medium'), url('../fonts/Futura-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura-Book'), url('../fonts/Futura-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Apercu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Apercu'), url('../fonts/Apercu.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'josefin_sansregular';
+  src: url('../fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/josefinsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'windsor_BT';
+  src: url('../fonts/WindsorBTRoman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  color: #1f3b66;
+}
+
+h1 {
+  font-family: 'windsor_BT';
+}
+
+h2 {
+  font-family: 'windsor_BT';
+}
+
+h3 {
+  font-family: 'windsor_BT';
+}
+
+h4 {
+  font-family: 'windsor_BT';
+}
+
 body {
-  font-family: sans-serif;
+  color: #1f3b66;
+  background: #fffff8;
+  margin: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+p {
+  font-family: 'Apercu';
+}
+
+.directoryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.directory {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 33rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 50rem;
+  height: 10%;
+  margin: 1vw;
+  font-size: 1rem;
+  color: #1f3b66;
+  font-family: 'windsor_BT';
+}
+nav div {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+nav a:link {
+  padding-left: '1rem';
+  padding-right: '1rem';
+  text-decoration: none;
+  color: #1f3b66;
+}
+
+nav a:visited {
+  font-family: 'windsor_BT';
+  text-decoration: none;
+  color: #1f3b66;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: 'center';
+  align-items: center;
+  width: 100%;
+}
+
+p {
+  display: 'flex';
+  text-align: center;
+}
+
+.goal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+  color: #1f3b66;
 }
 
-label {
-  display: block;
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+.info p {
+  text-align: left;
 }
 
-form div {
-  margin: 1em;
-  display: inline-block;
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #ffd0ae 60%);
+}
+
+.projectDeck {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectCarousel {
+  width: 50%;
+  height: 16rem;
+  border: 2px solid #1f3b66;
+  margin-right: 0.5rem;
+}
+
+.projectCarousel h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: 'center';
+  text-align: center;
+}
+
+.projectInfo {
+  width: 50%;
+  height: 16rem;
+  border: 2px solid #1f3b66;
+  margin-left: 0.5rem;
+}
+
+.projectInfo h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: 'center';
+  text-align: center;
+}
+
+.seeProjectsButton {
+  display: flex;
+  text-align: center;
+  border: 2px solid white;
+  background-color: #1f3b66;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.seeProjectsButton a {
+  color: white;
+}
+
+.projectFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.projectFooter p {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.artContainer {
+  display: flex;
+  flex-direction: row;
+  height: 20rem;
+  border: 2px solid #1f3b66;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.artDescription {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.artDescription h4 {
+  font-family: 'Apercu';
+}
+
+.artExamples {
+  margin: 1rem;
+  border: 2px solid #1f3b66;
+  width: 70%;
+}
+
+.artExamples h4 {
+  font-family: 'Apercu';
+}
+
+.blogDeck {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 50rem;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  width: 40rem;
+  height: 25rem;
+  border: 2px solid #1f3b66;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blogPostHeader {
+  width: 100%;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #1f3b66;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.blogPost {
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.writingSample {
+  overflow-y: scroll;
+  height: 17rem;
+  text-align: left;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }

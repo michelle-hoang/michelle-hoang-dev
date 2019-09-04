@@ -1,16 +1,16 @@
 import React from 'react'
 import {Switch, BrowserRouter as Router, Route} from 'react-router-dom'
 
-import Homepage from './components/Homepage'
-import Navbar from './components/Navbar'
-import Projects from './components/Projects'
-import Artwork from './components/Artwork'
-import Blog from './components/Blog'
-import Contact from './components/Contact'
-import SingleProject from './components/SingleProject'
-import DigitalFootprint from './components/DigitalFootprint'
+import Homepage from './Homepage'
+import Navbar from './Navbar'
+import Projects from './Projects'
+import Artwork from './Artwork'
+import Blog from './Blog'
+import Contact from './Contact'
+import SingleProject from './SingleProject'
+import DigitalFootprint from './DigitalFootprint'
 
-export default class App extends React.Component {
+export default class Root extends React.Component {
   render() {
     return (
       <Router>
